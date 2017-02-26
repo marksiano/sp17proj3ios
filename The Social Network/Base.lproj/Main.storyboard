@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="rLm-AO-ehm">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="CYh-gr-967">
+            <objects>
+                <navigationController id="rLm-AO-ehm" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="B9F-dI-5H3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="MB4-fn-Src"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RW3-UA-Z4W" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-488" y="-384"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="The_Social_Network" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ovW-wF-tNG"/>
+                    <connections>
+                        <segue destination="xgI-c5-P5a" kind="show" identifier="toSignup" id="1DX-nY-gD5"/>
+                        <segue destination="FZX-Ds-S9y" kind="show" identifier="toFeed" id="owE-of-MOR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--Feed View Controller-->
+        <scene sceneID="aUc-DT-6EF">
+            <objects>
+                <viewController id="FZX-Ds-S9y" customClass="FeedViewController" customModule="The_Social_Network" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Awv-PN-vcC"/>
+                        <viewControllerLayoutGuide type="bottom" id="eI1-SW-JdH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="17G-kq-4aG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <segue destination="VpC-JA-51X" kind="presentation" identifier="toPost" id="CJ3-iw-Ya1"/>
+                        <segue destination="kYa-2U-D83" kind="presentation" identifier="toDetail" id="CRt-bp-nBL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PGv-8g-MRt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="766" y="486"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="oJK-w1-hlE">
+            <objects>
+                <viewController id="kYa-2U-D83" customClass="DetailViewController" customModule="The_Social_Network" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8YE-8p-JoO"/>
+                        <viewControllerLayoutGuide type="bottom" id="zgE-fb-Nmx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="qsC-83-hzu">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sV5-5C-2ux" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1807" y="237"/>
+        </scene>
+        <!--Signup View Controller-->
+        <scene sceneID="EXQ-29-zR0">
+            <objects>
+                <viewController id="xgI-c5-P5a" customClass="SignupViewController" customModule="The_Social_Network" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cw9-La-7os"/>
+                        <viewControllerLayoutGuide type="bottom" id="Eho-nA-h1T"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="lEU-3U-NTe">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <segue destination="FZX-Ds-S9y" kind="show" identifier="toFeed" id="xm3-tE-iXn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lv9-hr-7sI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="766" y="-339"/>
+        </scene>
+        <!--New Post View Controller-->
+        <scene sceneID="heX-aq-XW0">
+            <objects>
+                <viewController id="VpC-JA-51X" customClass="NewPostViewController" customModule="The_Social_Network" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hPP-TR-giS"/>
+                        <viewControllerLayoutGuide type="bottom" id="yEq-V2-yS4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Szy-rv-Ezi">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="37q-Xh-g7d" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1621" y="-473"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="owE-of-MOR"/>
+    </inferredMetricsTieBreakers>
+</document>
